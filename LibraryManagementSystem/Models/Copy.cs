@@ -22,12 +22,27 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
+        public int CopyNumber
+        {
+            get;
+            set;
+        }
         public int ShelfId
         {
             get;
             set;
         }
         public virtual Shelf Shelf
+        {
+            get;
+            set;
+        }
+        public Boolean Available
+        {
+            get;
+            set;
+        }
+        public virtual ICollection<Borrow> Borrows
         {
             get;
             set;
