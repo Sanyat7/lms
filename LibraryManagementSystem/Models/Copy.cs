@@ -42,6 +42,11 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
+        public Boolean AgeRestricted
+        {
+            get;
+            set;
+        }
         public virtual ICollection<Borrow> Borrows
         {
             get;
