@@ -181,10 +181,14 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Borrow.cs" />
+    <Compile Include="Models\BorrowType.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Copy.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\Membership.cs" />
     <Compile Include="Models\Publisher.cs" />
     <Compile Include="Models\Shelf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
