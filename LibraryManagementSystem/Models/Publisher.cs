@@ -17,7 +17,7 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
-        public ICollection<Book> Book
+        public virtual ICollection<Book> Book
         {
             get;
             set;

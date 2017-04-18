@@ -5,7 +5,7 @@ using System.Web;
 
 namespace LibraryManagementSystem.Models
 {
-    public class Shelf
+    public class Author
     {
         public int Id
         {
@@ -17,12 +17,7 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
-        public int NumberOfBooks
-        {
-            get;
-            set;
-        }
-        public virtual ICollection<Shelf> Shelves
+        public virtual ICollection<Book> Books
         {
             get;
             set;
