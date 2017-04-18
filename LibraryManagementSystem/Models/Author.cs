@@ -12,7 +12,17 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
-        public string Name
+        public string FirstName
+        {
+            get;
+            set;
+        }
+        public string MiddleName
+        {
+            get;
+            set;
+        }
+        public string LastName
         {
             get;
             set;

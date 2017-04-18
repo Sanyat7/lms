@@ -12,6 +12,11 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
+        public string Name
+        {
+            get;
+            set;
+        }
         public DateTime YearOfPublication
         {
             get;

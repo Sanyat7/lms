@@ -17,6 +17,11 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
+        public string Address
+        {
+            get;
+            set;
+        }
         public virtual ICollection<Book> Book
         {
             get;
