@@ -23,7 +23,7 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li>
-                <a href="#">
+                <a href="@Url.Action("Index", "Home")">
                     <i class="fa fa-dashboard"></i> <span>Dashboard</span> 
                 </a>
             </li>
@@ -32,21 +32,21 @@
                     <i class="fa fa-book"></i> <span>Books</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> All Books</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Authors</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Publishers</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Category</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Copy</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Shelf</a></li>
+                    <li><a href="@Url.Action("Index", "Books")"><i class="fa fa-circle-o"></i> All Books</a></li>
+                    <li><a href="@Url.Action("Index", "Authors")"><i class="fa fa-circle-o"></i> Authors</a></li>
+                    <li><a href="@Url.Action("Index", "Publishers")"><i class="fa fa-circle-o"></i> Publishers</a></li>
+                    <li><a href="@Url.Action("Index", "Categories")"><i class="fa fa-circle-o"></i> Category</a></li>
+                    <li><a href="@Url.Action("Index", "Copies")"><i class="fa fa-circle-o"></i> Copy</a></li>
+                    <li><a href="@Url.Action("Index", "Shelves")"><i class="fa fa-circle-o"></i> Shelf</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">
+                <a href="@Url.Action("Index", "Memberships")">
                     <i class="fa fa-users"></i> <span>Memberships</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="@Url.Action("Index", "Members")">
                     <i class="fa fa-user"></i> <span>Members</span>
                 </a>
             </li>
@@ -55,8 +55,8 @@
                     <i class="fa fa-exchange"></i> <span>Loans</span> <i class="fa fa-angle-left pull-right"></i>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Loan Types</a></li>
-                    <li><a href="#"><i class="fa fa-circle-o"></i> Loan Transactions</a></li>
+                    <li><a href="@Url.Action("Index", "BorrowTypes")"><i class="fa fa-circle-o"></i> Loan Types</a></li>
+                    <li><a href="@Url.Action("Index", "Borrows")"><i class="fa fa-circle-o"></i> Loan Transactions</a></li>
                 </ul>
             </li>
         </ul>

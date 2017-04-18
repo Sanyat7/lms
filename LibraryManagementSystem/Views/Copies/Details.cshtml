@@ -1,0 +1,59 @@
+﻿@model LibraryManagementSystem.Models.Copy
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLteLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Copy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Book.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Book.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Shelf.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Shelf.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CopyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CopyNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Available)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeRestricted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeRestricted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
