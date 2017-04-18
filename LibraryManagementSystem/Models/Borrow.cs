@@ -46,13 +46,15 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
-        public virtual BorrowTypeId BorrowTypeId
+        public int BorrowTypeId
+
         {
             get;
             set;
         }
-        public BorrowType BorrowType {
+        public virtual BorrowType BorrowType
 
+        {
             get;
             set;
         }
