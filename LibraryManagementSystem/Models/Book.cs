@@ -12,7 +12,47 @@ namespace LibraryManagementSystem.Models
             get;
             set;
         }
-        public string Author
+        public DateTime YearOfPublication
+        {
+            get;
+            set;
+        }
+        public int Isbn
+        {
+            get;
+            set;
+        } 
+        public int PublisherId
+        {
+            get;
+            set;
+        }
+        public virtual Publisher Publisher
+        {
+            get;
+            set;
+        }
+        public string Details
+        {
+            get;
+            set;
+        }
+        public double Penalty
+        {
+            get;
+            set;
+        }
+        public virtual ICollection<Author> Authors
+        {
+            get;
+            set;
+        }
+        public virtual ICollection<Category> Categories
+        {
+            get;
+            set;
+        }
+        public virtual ICollection<Copy> Copies
         {
             get;
             set;
