@@ -183,6 +183,7 @@
     <Compile Include="Models\Copy.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Member.cs" />
     <Compile Include="Models\Publisher.cs" />
     <Compile Include="Models\Shelf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
