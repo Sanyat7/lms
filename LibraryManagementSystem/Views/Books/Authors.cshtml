@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Authors";
+    Layout = "~/Views/Shared/_AdminLteLayout.cshtml";
+}
+
+<h2>Manage Authors</h2>
+
+@model LibraryManagementSystem.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h4>Authors For This Book</h4>
+
+<div>
+    <hr />
+    <table class="table table-hover table-bordered">
+        <tr>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+        </tr>
+
+        @foreach (var item in Model.Authors)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MiddleName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+<p>
+    <button type="button" class="btn btn-success" onclick="location.href='@Url.Action("EditAuthors", "Books", new { id = Model.Id })'">Edit Authors</button>
+    <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Books")'">Cancel</button>
+</p>
+

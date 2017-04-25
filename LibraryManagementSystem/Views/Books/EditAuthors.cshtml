@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "EditAuthors";
+    Layout = "~/Views/Shared/_AdminLteLayout.cshtml";
+}
+
+<h2>Edit Authors</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <div>
+            <table class="table table-bordered" style="margin-top:30px">
+                <tr>
+                    <th>Registered Authors</th>
+                </tr>
+                @{
+                    int cnt = 0;
+                    List<LibraryManagementSystem.ViewModels.AssignedAuthorData> authors = ViewBag.Authors;
+
+                    foreach (var author in authors)
+                    {
+                        if (cnt++ % 3 == 0)
+                        {
+                            @:<tr></tr>
+                            }
+                        @:<tr>
+                            @:<td>
+                                @:<input type="checkbox" name="selectedAuthors" value="@author.AuthorId" @(Html.Raw(author.Assigned ? "checked=\"checked\"" : "")) /> @author.Name
+                                @:</td>
+                        }
+                    @:</tr>
+                }
+
+            </table>
+            <div class="form-group">
+                <div>
+                    <input type="submit" value="Save" class="btn btn-success" />
+                    <button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Books")'"> Cancel </button>
+                </div>
+            </div>
+        </div>
+    </div>
+                    }
+

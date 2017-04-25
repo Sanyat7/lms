@@ -204,6 +204,7 @@
     <Compile Include="Models\Shelf.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AssignedAuthorData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\AdminLTE\AdminLTE.css" />
@@ -865,6 +866,8 @@
     <Content Include="Views\Shelves\Details.cshtml" />
     <Content Include="Views\Shelves\Edit.cshtml" />
     <Content Include="Views\Shelves\Index.cshtml" />
+    <Content Include="Views\Books\Authors.cshtml" />
+    <Content Include="Views\Books\EditAuthors.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
